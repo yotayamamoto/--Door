@@ -1,0 +1,17 @@
+
+$ff_japanese: "Zen Kaku Gothic New", sans-serif;
+body{
+    color: #ffffff;
+    font-family: $ff_japanese;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+a{
+    display: block;
+}
+iframe{
+    display: none;
+}
