@@ -6,6 +6,8 @@ $desk: 1280px;
 $percent: 1440/100;
 $sp_percent: 375/100;
 
+
+
 header{
     height: 607px;
     position: relative;
@@ -53,7 +55,7 @@ header{
                     li,a{
                         display: inline-block;
                         margin-right: 4%;
-                        font-size: calc(32vw/$percent);
+                        font-size: 32rem;
                         font-family: $ff_english;
                         
                     }
@@ -118,7 +120,7 @@ header{
                 font-size: 8vw;
             }
             @media(min-width:$middle){
-                font-size: calc(96vw/$percent);
+                font-size: 96rem;
             }
         }
     }

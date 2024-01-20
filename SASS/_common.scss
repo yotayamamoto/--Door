@@ -1,5 +1,9 @@
-
+$percent: 1440/100;
 $ff_japanese: "Zen Kaku Gothic New", sans-serif;
+
+html{
+    font-size: calc(1vw/$percent);
+}
 body{
     color: #ffffff;
     font-family: $ff_japanese;
