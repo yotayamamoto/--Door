@@ -1,37 +1,77 @@
 @use "common.scss";
 $ff_english: "Cormorant Garamond", serif;
+$pad: 600px;
+$middle: 960px;
+$desk: 1280px;
+$percent: 1440/100;
+$sp_percent: 375/100;
 
 header{
+    height: 607px;
     position: relative;
+    @media(min-width:960px){
+        height: 62vw;
+    }
     .mainvisual{
         width: 100%;
-        height: 607px;
+        height: 100%;
+    }
+    .mainvisual::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(270deg, rgba(21, 22, 26, 0.00) 7%, #15161A 100%);
     }
     .header_top{
         width: 100%;
+        padding: 0 4%;
         display: flex;
         justify-content: space-between;
         position: fixed;
         top: 0;
         left: 0;
+        z-index: 2;
         h1{
             margin-top: 20px;
-            margin-left: 15px;
             width: 180px;
+            @media(min-width:$middle){
+                width: 20%;
+                margin-top: 40px;
+            }
         }
         nav{
             display: none;
+            @media(min-width:$middle){
+                display: block;
+                width: calc(982vw/$percent);
+                ul{
+                    text-align: right;
+                    margin-top: 65px;
+                    li,a{
+                        display: inline-block;
+                        margin-right: 4%;
+                        font-size: calc(32vw/$percent);
+                        font-family: $ff_english;
+                        
+                    }
+                    li:last-child,
+                    a:last-child{
+                        margin-right: unset;
+                    }
+                }  
+            }
         }
         .humburger{
             width: 29px;
             height: 19px;
             margin-top: 34px;
-            margin-right: 15px;
-            // position: fixed;
-            // top: 0;
-            // right: 0;
-            // z-index: 20;
             cursor: pointer;
+            @media(min-width:$middle){
+                display: none;
+            }
             span{
                 display: block;
                 content: "";
@@ -46,33 +86,241 @@ header{
         }
         .humburger.open{
             span:nth-child(1){
-                transform: translate(0,8px) rotate(315deg);
+                transform: translate(0,5px) rotate(315deg);
             }
             span:nth-child(2){
                 display: none;
             }
             span:nth-child(3){
-                transform: translate(0,-8px) rotate(315deg);
+                transform: translate(0,-5px) rotate(-315deg);
             }
         }
     }
     .catch_copy{
-        width: 170px;
+        width: 45%;
         position: absolute;
         top: 266px;
         left: 4%;
+        @media(min-width:$pad){
+            top: 200px;
+        }
+        @media(min-width:$middle){
+            top: 240px;
+        }
         p{
             font-family: $ff_english;
-            font-size: 40px;
+            font-size: 10vw;
             font-style: italic;
             line-height: 120%;
             letter-spacing: 2px;
             font-weight: 600;
+            @media(min-width:$pad){
+                font-size: 8vw;
+            }
+            @media(min-width:$middle){
+                font-size: calc(96vw/$percent);
+            }
+        }
+    }
+    .contact_area{
+        position: absolute;
+        bottom: 16px;
+        left: 4%;
+        @media(min-width:$middle){
+            bottom: 32px;
+            width: 40%;
+        }
+        .online{
+            font-size: 14px;
+            letter-spacing: 0.7px;
+            margin-bottom: 14px;
+            position: relative;
+            @media(min-width:$middle){
+                font-size: calc(32vw/$percent);
+                letter-spacing: calc(1.6vw/$percent);
+                margin-bottom: calc(32vw/$percent);
+            }
+        }
+        .online:hover{
+            opacity: 0.7;
+        }
+        .online::after{
+            content: "";
+            display: block;
+            width: 40px;
+            border: 0.5px solid #ffffff;
+            position: absolute;
+            top: 50%;
+            right: -40px;
+            @media(min-width:$middle){
+                width: calc(88vw/$percent);
+                right: 0;
+            }
+        }
+        .tel{
+            display: inline-block;
+            font-size: 28px;
+            letter-spacing: 1.4px;
+            font-weight: 300;
+            margin-left: 28px;
+            border-bottom: 0.5px solid #ffffff;
+            position: relative;
+            @media(min-width:$middle){
+                font-size: calc(64vw/$percent);
+                letter-spacing: calc(3.2vw/$percent);
+                margin-left: 12%;
+            }
+        }
+        .tel::before{
+            content: "";
+            display: block;
+            background-image: url(../images_door/iconamoon_phone-thin.png);
+            background-size: contain;
+            width: 28px;
+            height: 28px;
+            position: absolute;
+            top: 6px;
+            left: -36px;
+            @media(min-width:$middle){
+                width: 4vw;
+                height: 4vw;
+                left: -16%;
+            }
+        }
+    }
+    .news{
+        position: absolute;
+        bottom: -152px;
+        left: 4%;
+        background-color: #15161A;
+        padding: 8px 16px;
+        width: 96%;
+        @media(min-width:$pad){
+            width: 44%;
+            bottom: 16px;
+            left: unset;
+            right: 0;
+            @media(min-width:$middle){
+                bottom: 32px;
+            }
+            @media(min-width: $desk){
+                padding: 20px 40px;
+            }
+        }
+        &__heading{
+            display: flex;
+            gap: 8px;
+            @media(min-width:$middle){
+                gap: calc(24vw/$percent);
+            }
+        }
+        &__heading h3{
+            font-family: $ff_english;
+            font-size: 24px;
+            letter-spacing: 1.2px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #ffffff;
+            margin-bottom: 16px;
+            @media(min-width:$middle){
+                font-size: calc(32vw/$percent);
+                letter-spacing: calc(3.2vw/$percent);
+                margin-bottom: calc(16vw/$percent);
+            }
+        }
+        &__heading p{
+            display: inline-block;
+            font-size: 10px;
+            letter-spacing: 0.5px;
+            margin-top: 14px;
+            position: relative;
+            @media(min-width:$middle){
+                font-size: calc(14vw/$percent);
+            }
+        }
+        &__heading p::after{
+            content: "";
+            display: block;
+            width: 24px;
+            border: 1px solid #ffffff;
+            position: absolute;
+            top: 6px;
+            right: -32px;
+            @media(min-width:$middle){
+                top: calc(9vw/$percent);
+                width: calc(48vw/$percent);
+                right: calc(-56vw/$percent);
+            }
+        }
+        &__dl{
+            .news_list{
+                margin-bottom: 18px;
+                display: flex;
+                gap: 16px;
+                &__date{
+                    font-size: 12px;
+                    font-weight: 300;
+                    letter-spacing: 0.6px;
+                    @media(min-width:$middle){
+                        font-size: calc(16vw/$percent);
+                        letter-spacing: calc(1.6vw/$percent);
+                        margin-bottom: calc(16vw/$percent);
+                    }
+                }
+                &__title{
+                    font-size: 12px;
+                    font-weight: 300;
+                    letter-spacing: 0.6px;
+                    @media(min-width:$middle){
+                        font-size: calc(16vw/$percent);
+                        letter-spacing: calc(1.6vw/$percent);
+                        margin-bottom: calc(16vw/$percent);
+                    }
+                }
+            }
+            .news_list:last-child{
+                margin-bottom: unset;
+            }
         }
     }
 }
 
-// .sp_nav{
+main{
+    padding-top: 500px;
+}
 
-// }
+.sp_nav{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(21, 22, 26,0.95);
+    ul{
+        padding: 100px 4% 0;
+        @media(min-width:$pad){
+            padding: 160px 4% 0;
+        }
+        a{
+            font-family: $ff_english;
+            font-size: 40px;
+            margin-bottom: 16px;
+        }
+    }
+}
+.sp_nav.open{
+    display: block ;
+    animation-name: fadeUp;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 
