@@ -8,6 +8,9 @@ html{
     @media(min-width:$middle){
         font-size: calc(1vw/$percent);
     }
+    @media(min-width:1440px){
+        font-size: 1px;
+    }
 }
 body{
     color: #ffffff;
