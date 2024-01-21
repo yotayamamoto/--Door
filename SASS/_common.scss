@@ -1,8 +1,13 @@
 $percent: 1440/100;
+$sp_percent: 375/100;
+$middle: 960px;
 $ff_japanese: "Zen Kaku Gothic New", sans-serif;
 
 html{
-    font-size: calc(1vw/$percent);
+    font-size: calc(1vw/$sp_percent);
+    @media(min-width:$middle){
+        font-size: calc(1vw/$percent);
+    }
 }
 body{
     color: #ffffff;

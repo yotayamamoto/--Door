@@ -285,11 +285,7 @@ header{
         }
     }
 }
-
-main{
-    padding-top: 500px;
-}
-
+// スマホメニュー表示
 .sp_nav{
     display: none;
     width: 100%;
@@ -325,4 +321,115 @@ main{
         opacity: 1;
     }
 }
+// スマホメニュー表示
 
+#about{
+    margin-top: 232px;
+    padding: 76px 0;
+    background:url(../images_door/door_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 0px 32px 16px #0B0C10 inset;
+    @media(min-width:$middle){
+        margin-top: 160px;
+        padding: 144px 0;
+    }
+    .about_text{
+        text-align: center;
+        padding: 0 4%;
+        p{
+            font-size: 14rem;
+            color: #FFF;
+            line-height: 300%;
+            letter-spacing: 0.7px;
+            @media(min-width:$middle){
+                color: #FFF;
+                font-size: 20rem;
+                letter-spacing: 1px;
+            }
+        }
+    } 
+}
+
+#gallery{
+    padding-top: 80px;
+    position: relative;
+    @media(min-width:$middle){
+        padding-top: 160px;
+    }
+    h2{
+        display: inline-block;
+        font-family: $ff_english;
+        font-size: 24rem;
+        line-height: 100%; 
+        letter-spacing: 1.2px;
+        padding: 0 16px 8px 0;
+        margin-bottom: 16px;
+        border-bottom: 1px solid #ffffff;
+        @media(min-width:$middle){
+            font-size: 96rem;
+            letter-spacing: 4.8px;
+            padding: 0 40px 16px 0;
+            margin-bottom: 64px;
+        }
+    }
+    .gallery_bg{
+        font-size: 64rem;
+        line-height: 100%;
+        letter-spacing: 3.2px;
+        color: #15161A;
+        position: absolute;
+        top: 0;
+        right: 0;
+        @media(min-width:$middle){
+            font-size: 160rem;
+            letter-spacing: 8px;
+        }
+    }
+    .gallery_slider{
+        height: 25vw;
+        position: relative;
+        div{
+            height: 25vw;
+        }
+    }
+
+    .slick-dots{
+        height: 4px;
+        text-align: right;
+        position: absolute;
+        bottom: -10px;
+        right: 32px;
+        @media(min-width:$middle){
+            height: 16px;
+        }
+        li{
+            height: 4px;
+            margin: unset;
+            width: 10px;
+            @media(min-width:$middle){
+                height: 16px;
+                width: 32px;
+            }
+            button{
+                border-radius: 30px;
+                background-color: #ffffff;
+                width: 4px;
+                height: 4px;
+                padding: 2px;
+                @media(min-width:$middle){
+                    width: 16px;
+                    height: 16px;
+                    padding: 8px;
+                }
+            }
+            #slick-slide-control00::before,
+            #slick-slide-control01::before,
+            #slick-slide-control02::before{
+                width: 0;
+                height: 0;
+                color: #ffffff;
+            }
+        }
+    } 
+}
