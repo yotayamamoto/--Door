@@ -60,7 +60,7 @@ header .header_top {
   padding: 0 4%;
   display: flex;
   justify-content: space-between;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 2;
@@ -546,7 +546,7 @@ header .news__dl .news_list:last-child {
     letter-spacing: 8px;
     right: unset;
     left: 0;
-    transform: rotate(90deg) translate(60%, 190%);
+    transform: rotate(90deg) translate(60%, 100%);
   }
 }
 #bartender .bartender_flex {
@@ -666,9 +666,7 @@ header .news__dl .news_list:last-child {
   #cocktail .cocktail_bg {
     font-size: 160rem;
     letter-spacing: 8px;
-    right: unset;
-    right: 0;
-    transform: rotate(90deg) translate(70%, -150%);
+    transform: rotate(90deg) translate(70%, -90%);
   }
 }
 #cocktail .cocktail_flex {
@@ -1122,4 +1120,72 @@ header .news__dl .news_list:last-child {
 #location .location_flex__text__dl__info {
   display: flex;
   gap: 24px;
+}
+
+footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images_door/footer.jpg);
+  background-position: center;
+  background-size: cover;
+}
+footer .footer_inner {
+  padding: 20px 4% 12px;
+}
+@media (min-width: 960px) {
+  footer .footer_inner {
+    padding: 40px 4% 12px;
+  }
+}
+footer .footer_inner h1 {
+  width: 180px;
+  margin-bottom: 40rem;
+}
+@media (min-width: 960px) {
+  footer .footer_inner h1 {
+    width: 20%;
+    margin-bottom: 80rem;
+  }
+}
+footer .footer_inner .footer_menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8rem 24rem;
+  justify-content: center;
+  margin-bottom: 20rem;
+}
+@media (min-width: 960px) {
+  footer .footer_inner .footer_menu {
+    gap: 74rem;
+  }
+}
+footer .footer_inner .footer_menu li, footer .footer_inner .footer_menu a {
+  font-size: 14rem;
+  letter-spacing: 0.7px;
+  font-family: "Cormorant Garamond", serif;
+}
+@media (min-width: 960px) {
+  footer .footer_inner .footer_menu li, footer .footer_inner .footer_menu a {
+    font-size: 20rem;
+    letter-spacing: 1px;
+  }
+}
+footer .footer_inner .footer_menu_policy {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 20rem;
+}
+footer .footer_inner .footer_menu_policy li, footer .footer_inner .footer_menu_policy a {
+  font-size: 10rem;
+}
+@media (min-width: 960px) {
+  footer .footer_inner .footer_menu_policy li, footer .footer_inner .footer_menu_policy a {
+    font-size: 12rem;
+  }
+}
+footer .footer_inner .copy {
+  text-align: center;
+}
+footer .footer_inner .copy p {
+  font-size: 10rem;
+  font-family: "Cormorant Garamond", serif;
 }

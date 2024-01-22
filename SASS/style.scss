@@ -32,7 +32,7 @@ header{
         padding: 0 4%;
         display: flex;
         justify-content: space-between;
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         z-index: 2;
@@ -460,7 +460,7 @@ header{
             letter-spacing: 8px;
             right: unset;
             left: 0;
-            transform: rotate(90deg) translate(60%,190%);
+            transform: rotate(90deg) translate(60%,100%);
         }
     }
     .bartender_flex{
@@ -562,9 +562,7 @@ header{
         @media(min-width:$middle){
             font-size: 160rem;
             letter-spacing: 8px;
-            right: unset;
-            right: 0;
-            transform: rotate(90deg) translate(70%,-150%);
+            transform: rotate(90deg) translate(70%,-90%);
         }
     }
     .cocktail_flex{
@@ -959,3 +957,61 @@ header{
     }
 }
 
+footer{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images_door/footer.jpg);
+    background-position: center;
+    background-size: cover;
+    .footer_inner{
+        padding: 20px 4% 12px;
+        @media(min-width:$middle){
+            padding: 40px 4% 12px;
+        }
+        h1{
+            width: 180px;
+            margin-bottom: 40rem;
+            @media(min-width:$middle){
+                width: 20%;
+                margin-bottom: 80rem;
+            }
+        }
+        .footer_menu{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8rem 24rem;
+            justify-content: center;
+            margin-bottom: 20rem;
+            @media(min-width:$middle){
+                gap: 74rem;
+            }
+            li,a{
+                font-size: 14rem;
+                letter-spacing: 0.7px;
+                font-family: $ff_english;
+                @media(min-width:$middle){
+                    font-size: 20rem;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+        .footer_menu_policy{
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            margin-bottom: 20rem;
+            li,a{
+                font-size: 10rem;
+                @media(min-width:$middle){
+                    font-size: 12rem;
+                }
+            }
+        }
+        .copy{
+            text-align: center;
+            p{
+                font-size: 10rem;
+                font-family: $ff_english;
+
+            }
+        }
+    }
+}
