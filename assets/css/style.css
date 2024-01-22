@@ -26,6 +26,7 @@ img {
 
 a {
   display: block;
+  line-height: 100%;
 }
 
 a:hover {
@@ -271,6 +272,7 @@ header .news {
 header .news__heading {
   display: flex;
   gap: 8px;
+  margin-bottom: 16px;
 }
 @media (min-width: 960px) {
   header .news__heading {
@@ -282,8 +284,8 @@ header .news__heading h3 {
   font-size: 24px;
   letter-spacing: 1.2px;
   padding-bottom: 8px;
+  line-height: 100%;
   border-bottom: 1px solid #ffffff;
-  margin-bottom: 16px;
 }
 @media (min-width: 960px) {
   header .news__heading h3 {
@@ -296,7 +298,8 @@ header .news__heading p {
   display: inline-block;
   font-size: 10px;
   letter-spacing: 0.5px;
-  margin-top: 14px;
+  margin: 14px 0 8px;
+  line-height: 100%;
   position: relative;
 }
 @media (min-width: 960px) {
@@ -310,7 +313,7 @@ header .news__heading p::after {
   width: 24px;
   border: 1px solid #ffffff;
   position: absolute;
-  top: 6px;
+  top: 50%;
   right: -32px;
 }
 @media (min-width: 960px) {
@@ -329,6 +332,7 @@ header .news__dl .news_list__date {
   font-size: 12px;
   font-weight: 300;
   letter-spacing: 0.6px;
+  line-height: 100%;
 }
 @media (min-width: 960px) {
   header .news__dl .news_list__date {
@@ -341,6 +345,7 @@ header .news__dl .news_list__title {
   font-size: 12px;
   font-weight: 300;
   letter-spacing: 0.6px;
+  line-height: 100%;
 }
 @media (min-width: 960px) {
   header .news__dl .news_list__title {
@@ -441,6 +446,7 @@ header .news__dl .news_list:last-child {
   letter-spacing: 1.2px;
   padding: 0 16px 8px 0;
   margin-bottom: 16px;
+  margin-left: 4%;
   border-bottom: 1px solid #ffffff;
 }
 @media (min-width: 960px) {
@@ -642,10 +648,12 @@ header .news__dl .news_list:last-child {
 #cocktail {
   padding-top: 80px;
   position: relative;
+  margin-bottom: 72px;
 }
 @media (min-width: 960px) {
   #cocktail {
     padding-top: 200px;
+    margin-bottom: 160px;
   }
 }
 #cocktail .cocktail_bg {
@@ -813,11 +821,188 @@ header .news__dl .news_list:last-child {
   width: 24px;
   border: 1px solid #ffffff;
   position: absolute;
-  top: 6px;
+  top: 50%;
   right: -32px;
 }
 @media (min-width: 960px) {
   #cocktail .cocktail_flex__right .btn_cocktail .btn::after {
+    width: 48px;
+    top: 0.625vw;
+    width: 3.3333333333vw;
+    right: -3.8888888889vw;
+  }
+}
+
+#menu {
+  padding: 8px 0;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images_door/city-5772121_1920.jpg);
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 600px) {
+  #menu {
+    padding: 16px 0;
+  }
+}
+#menu h2 {
+  display: inline-block;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 24rem;
+  line-height: 100%;
+  letter-spacing: 1.2px;
+  padding: 0 8px 8px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid #ffffff;
+}
+@media (min-width: 960px) {
+  #menu h2 {
+    font-size: 96rem;
+    letter-spacing: 4.8px;
+    padding: 0 40px 16px 0;
+    margin-bottom: 64px;
+  }
+}
+#menu .menu_list {
+  padding: 0 4%;
+  max-width: 1296px;
+  text-align: left;
+  width: 287rem;
+  margin: 0 auto;
+}
+@media (min-width: 960px) {
+  #menu .menu_list {
+    display: flex;
+    justify-content: space-between;
+    gap: 114px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+#menu .menu_list__drink {
+  margin-bottom: 40px;
+}
+@media (min-width: 960px) {
+  #menu .menu_list__drink {
+    width: 543rem;
+    margin-bottom: unset;
+  }
+}
+#menu .menu_list__drink h3 {
+  font-size: 20rem;
+  margin-bottom: 18px;
+  font-family: "Cormorant Garamond", serif;
+}
+@media (min-width: 960px) {
+  #menu .menu_list__drink h3 {
+    font-size: 40rem;
+    margin-bottom: 32px;
+    letter-spacing: 2px;
+  }
+}
+#menu .menu_list__drink .list_item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding: 4px 0;
+  border-bottom: 1px dashed #ffffff;
+}
+@media (min-width: 960px) {
+  #menu .menu_list__drink .list_item {
+    margin-bottom: 24px;
+    padding: 8px 0;
+  }
+}
+#menu .menu_list__drink .list_item p {
+  font-size: 10rem;
+  line-height: 100%;
+}
+@media (min-width: 960px) {
+  #menu .menu_list__drink .list_item p {
+    font-size: 20rem;
+    letter-spacing: 1px;
+  }
+}
+#menu .menu_list__food {
+  margin-bottom: 24px;
+}
+@media (min-width: 960px) {
+  #menu .menu_list__food {
+    width: 543rem;
+    margin-bottom: unset;
+  }
+}
+#menu .menu_list__food h3 {
+  font-size: 20rem;
+  margin-bottom: 18px;
+  font-family: "Cormorant Garamond", serif;
+}
+@media (min-width: 960px) {
+  #menu .menu_list__food h3 {
+    font-size: 40rem;
+    margin-bottom: 32px;
+    letter-spacing: 2px;
+  }
+}
+#menu .menu_list__food .list_item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding: 4px 0;
+  border-bottom: 1px dashed #ffffff;
+}
+@media (min-width: 960px) {
+  #menu .menu_list__food .list_item {
+    margin-bottom: 24px;
+    padding: 8px 0;
+  }
+}
+#menu .menu_list__food .list_item p {
+  font-size: 10rem;
+  line-height: 100%;
+}
+@media (min-width: 960px) {
+  #menu .menu_list__food .list_item p {
+    font-size: 20rem;
+    letter-spacing: 1px;
+  }
+}
+#menu .btn_menu {
+  padding: 0 4%;
+  text-align: right;
+  max-width: 1296px;
+  width: 287rem;
+  margin: 0 auto;
+}
+@media (min-width: 960px) {
+  #menu .btn_menu {
+    width: 100%;
+  }
+}
+#menu .btn_menu .btn {
+  font-size: 10rem;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  position: relative;
+  margin-right: 32px;
+}
+@media (min-width: 960px) {
+  #menu .btn_menu .btn {
+    font-size: 14rem;
+    letter-spacing: 0.7px;
+  }
+}
+#menu .btn_menu .btn::after {
+  content: "";
+  display: block;
+  width: 24px;
+  border: 1px solid #ffffff;
+  position: absolute;
+  top: 50%;
+  right: -32px;
+}
+@media (min-width: 960px) {
+  #menu .btn_menu .btn::after {
     width: 48px;
     top: 0.625vw;
     width: 3.3333333333vw;

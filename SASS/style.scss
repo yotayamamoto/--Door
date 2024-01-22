@@ -212,6 +212,7 @@ header{
         &__heading{
             display: flex;
             gap: 8px;
+            margin-bottom: 16px;
             @media(min-width:$middle){
                 gap: calc(24vw/$percent);
             }
@@ -221,8 +222,8 @@ header{
             font-size: 24px;
             letter-spacing: 1.2px;
             padding-bottom: 8px;
+            line-height: 100%;
             border-bottom: 1px solid #ffffff;
-            margin-bottom: 16px;
             @media(min-width:$middle){
                 font-size: calc(32vw/$percent);
                 letter-spacing: calc(3.2vw/$percent);
@@ -233,7 +234,9 @@ header{
             display: inline-block;
             font-size: 10px;
             letter-spacing: 0.5px;
-            margin-top: 14px;
+            margin: 14px 0 8px;
+
+            line-height: 100%;
             position: relative;
             @media(min-width:$middle){
                 font-size: calc(14vw/$percent);
@@ -245,7 +248,7 @@ header{
             width: 24px;
             border: 1px solid #ffffff;
             position: absolute;
-            top: 6px;
+            top: 50%;
             right: -32px;
             @media(min-width:$middle){
                 top: calc(9vw/$percent);
@@ -262,6 +265,7 @@ header{
                     font-size: 12px;
                     font-weight: 300;
                     letter-spacing: 0.6px;
+                    line-height: 100%;
                     @media(min-width:$middle){
                         font-size: calc(16vw/$percent);
                         letter-spacing: calc(1.6vw/$percent);
@@ -272,6 +276,7 @@ header{
                     font-size: 12px;
                     font-weight: 300;
                     letter-spacing: 0.6px;
+                    line-height: 100%;
                     @media(min-width:$middle){
                         font-size: calc(16vw/$percent);
                         letter-spacing: calc(1.6vw/$percent);
@@ -365,6 +370,7 @@ header{
         letter-spacing: 1.2px;
         padding: 0 16px 8px 0;
         margin-bottom: 16px;
+        margin-left: 4%;
         border-bottom: 1px solid #ffffff;
         @media(min-width:$middle){
             font-size: 96rem;
@@ -539,8 +545,10 @@ header{
 #cocktail{
     padding-top: 80px;
     position: relative;
+    margin-bottom: 72px;
     @media(min-width:$middle){
         padding-top: 200px;
+        margin-bottom: 160px;
     }
     .cocktail_bg{
         font-size: 64rem;
@@ -686,7 +694,7 @@ header{
                     width: 24px;
                     border: 1px solid #ffffff;
                     position: absolute;
-                    top: 6px;
+                    top: 50%;
                     right: -32px;
                     @media(min-width:$middle){
                         width: 48px;
@@ -700,4 +708,156 @@ header{
             
         }
     }
+}
+
+#menu{
+    padding: 8px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images_door/city-5772121_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    @media(min-width:$pad){
+        padding: 16px 0;
+    }
+    h2{
+        display: inline-block;
+        font-family: $ff_english;
+        font-size: 24rem;
+        line-height: 100%; 
+        letter-spacing: 1.2px;
+        padding: 0 8px 8px;
+        margin-bottom: 28px;
+        border-bottom: 1px solid #ffffff;
+        @media(min-width:$middle){
+            font-size: 96rem;
+            letter-spacing: 4.8px;
+            padding: 0 40px 16px 0;
+            margin-bottom: 64px;
+        }
+    }
+    .menu_list{
+        padding: 0 4%;
+        max-width: calc(1200px*1.08);
+        text-align: left;
+        width: 287rem;
+        margin: 0 auto;
+        @media(min-width:$middle){
+            display: flex;
+            justify-content: space-between;
+            gap: 114px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        &__drink{
+           margin-bottom: 40px;
+           @media(min-width:$middle){
+            width: 543rem;
+            margin-bottom: unset;
+           }
+            h3{
+                font-size: 20rem;
+                margin-bottom: 18px;
+                font-family: $ff_english;
+                @media(min-width:$middle){
+                    font-size: 40rem;
+                    margin-bottom: 32px;
+                    letter-spacing: 2px;
+                }
+            }
+            .list_item{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 16px;
+                padding: 4px 0;
+                border-bottom: 1px dashed #ffffff;
+                @media(min-width:$middle){
+                    margin-bottom: 24px;
+                    padding: 8px 0;
+                }
+                p{
+                    font-size: 10rem;
+                    line-height: 100%;
+                    @media(min-width:$middle){
+                        font-size: 20rem;
+                        letter-spacing: 1px;
+                    }
+                }
+            } 
+        }
+        &__food{
+            margin-bottom: 24px;
+            @media(min-width:$middle){
+                width: 543rem;
+                margin-bottom: unset;
+               }
+            h3{
+                font-size: 20rem;
+                margin-bottom: 18px;
+                font-family: $ff_english;
+                @media(min-width:$middle){
+                    font-size: 40rem;
+                    margin-bottom: 32px;
+                    letter-spacing: 2px;
+                }
+            }
+            .list_item{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 16px;
+                padding: 4px 0;
+                border-bottom: 1px dashed #ffffff;
+                @media(min-width:$middle){
+                    margin-bottom: 24px;
+                    padding: 8px 0;
+                }
+                p{
+                    font-size: 10rem;
+                    line-height: 100%;
+                    @media(min-width:$middle){
+                        font-size: 20rem;
+                        letter-spacing: 1px;
+                    }
+                }
+            } 
+        }
+        
+        
+    }
+    .btn_menu{
+        padding: 0 4%;
+        text-align: right;
+        max-width: calc(1200px*1.08);
+        width: 287rem;
+        margin: 0 auto;
+        @media(min-width:$middle){
+            width: 100%;
+        }
+        .btn{
+            font-size: 10rem;
+            letter-spacing: 0.5px;
+            display: inline-block;
+            position: relative;
+            margin-right: 32px;
+            @media(min-width:$middle){
+                font-size: 14rem;
+                letter-spacing: 0.7px;
+            }
+        }
+        .btn::after{
+            content: "";
+            display: block;
+            width: 24px;
+            border: 1px solid #ffffff;
+            position: absolute;
+            top: 50%;
+            right: -32px;
+            @media(min-width:$middle){
+                width: 48px;
+                top: calc(9vw/$percent);
+                width: calc(48vw/$percent);
+                right: calc(-56vw/$percent);
+            }
+        }
+    }
+
 }
