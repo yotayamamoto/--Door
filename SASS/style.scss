@@ -716,8 +716,12 @@ header{
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images_door/city-5772121_1920.jpg);
     background-position: center;
     background-size: cover;
+    margin-bottom: 80px;
     @media(min-width:$pad){
         padding: 16px 0;
+    }
+    @media(min-width:$middle){
+        margin-bottom: 160px;
     }
     h2{
         display: inline-block;
@@ -743,7 +747,7 @@ header{
         margin: 0 auto;
         @media(min-width:$middle){
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             gap: 114px;
             width: 100%;
             margin-bottom: 20px;
@@ -861,3 +865,97 @@ header{
     }
 
 }
+
+#location{
+    padding: 0 4%;
+    text-align: center;
+    h2{
+        display: inline-block;
+        font-family: $ff_english;
+        font-size: 24rem;
+        line-height: 100%; 
+        letter-spacing: 1.2px;
+        padding: 0 8px 8px;
+        margin-bottom: 28px;
+        border-bottom: 1px solid #ffffff;
+        @media(min-width:$middle){
+            font-size: 96rem;
+            letter-spacing: 4.8px;
+            padding: 0 40px 16px 0;
+            margin-bottom: 64px;
+        }
+    }
+    .location_flex{
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 80px;
+        align-items: center;
+        @media(min-width:$middle){
+            flex-direction: row;
+            justify-content: center;
+            gap: 74px;
+            margin: 0 auto 160px;
+        }
+        &__map{
+            width: 287rem;
+            height: 177rem;
+            margin-bottom: 20px;
+            @media(min-width:$pad){
+                margin-bottom: 32px;
+            }
+            @media(min-width:$middle){
+                width: 600rem;
+                height: 370rem;
+            }
+            iframe{
+                width: 287rem;
+                height: 177rem;
+                @media(min-width:$middle){
+                    width: 600rem;
+                    height: 370rem;
+                }
+            }
+        }
+        &__text{
+            width: 287rem;
+            @media(min-width:$middle){
+                width: 527rem;
+            }
+            &__dl{
+                text-align: left;
+                dt{
+                    font-size: 16rem;
+                    letter-spacing: 0.8px;
+                    line-height: 100%;
+                    margin-bottom: 8px;
+                    font-weight: normal;
+                    @media(min-width:$pad){
+                        margin-bottom: 16px;
+                    }
+                    @media(min-width:$middle){
+                        font-size: 24rem;
+                    }
+                }
+                dd{
+                    font-size: 12rem;
+                    letter-spacing: 0.6px;
+                    line-height: 120%;
+                    margin-bottom: 16px;
+                    @media(min-width:$pad){
+                        margin-bottom: 32px;
+                    }
+                    @media(min-width:$middle){
+                        font-size: 20rem;
+                    }
+
+                }
+                &__info{
+                    display: flex;
+                    gap: 24px;
+                }
+            }
+        }
+    }
+}
+
