@@ -330,6 +330,7 @@ header{
 
 #about{
     margin-top: 232px;
+    margin-bottom: 80px;
     padding: 76px 0;
     background:url(../images_door/door_bg.jpg);
     background-position: center;
@@ -337,6 +338,7 @@ header{
     box-shadow: 0px 0px 32px 16px #0B0C10 inset;
     @media(min-width:$middle){
         margin-top: 160px;
+        margin-bottom: unset;
         padding: 144px 0;
     }
     .about_text{
@@ -358,9 +360,11 @@ header{
 
 #gallery{
     padding-top: 80px;
+    margin-bottom: 80px;
     position: relative;
     @media(min-width:$middle){
         padding-top: 160px;
+        margin-bottom: unset;
     }
     h2{
         display: inline-block;
@@ -393,10 +397,10 @@ header{
         }
     }
     .gallery_slider{
-        height: 25vw;
+        height: 50vw;
         position: relative;
         div{
-            height: 25vw;
+            height: 50vw;
         }
     }
     .slick-dotted.slick-slider{
@@ -410,6 +414,7 @@ header{
         right: 32px;
         @media(min-width:$middle){
             height: 16px;
+            bottom: -44px;
         }
         li{
             height: 4px;
@@ -417,7 +422,7 @@ header{
             width: 10px;
             @media(min-width:$middle){
                 height: 16px;
-                width: 32px;
+                width: 36px;
             }
             button{
                 border-radius: 30px;
@@ -442,9 +447,11 @@ header{
 
 #bartender{
     padding-top: 80px;
+    margin-bottom: 80px;
     position: relative;
     @media(min-width:$middle){
         padding-top: 160px;
+        margin-bottom: unset;
     }
     .bartender_bg{
         font-size: 64rem;
@@ -771,7 +778,7 @@ header{
                 justify-content: space-between;
                 margin-bottom: 16px;
                 padding: 4px 0;
-                border-bottom: 1px dashed #ffffff;
+                border-bottom: 1rem dashed #ffffff;
                 @media(min-width:$middle){
                     margin-bottom: 24px;
                     padding: 8px 0;
@@ -807,7 +814,7 @@ header{
                 justify-content: space-between;
                 margin-bottom: 16px;
                 padding: 4px 0;
-                border-bottom: 1px dashed #ffffff;
+                border-bottom: 1rem dashed #ffffff;
                 @media(min-width:$middle){
                     margin-bottom: 24px;
                     padding: 8px 0;

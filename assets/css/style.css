@@ -395,6 +395,7 @@ header .news__dl .news_list:last-child {
 }
 #about {
   margin-top: 232px;
+  margin-bottom: 80px;
   padding: 76px 0;
   background: url(../images_door/door_bg.jpg);
   background-position: center;
@@ -404,6 +405,7 @@ header .news__dl .news_list:last-child {
 @media (min-width: 960px) {
   #about {
     margin-top: 160px;
+    margin-bottom: unset;
     padding: 144px 0;
   }
 }
@@ -427,11 +429,13 @@ header .news__dl .news_list:last-child {
 
 #gallery {
   padding-top: 80px;
+  margin-bottom: 80px;
   position: relative;
 }
 @media (min-width: 960px) {
   #gallery {
     padding-top: 160px;
+    margin-bottom: unset;
   }
 }
 #gallery h2 {
@@ -469,11 +473,11 @@ header .news__dl .news_list:last-child {
   }
 }
 #gallery .gallery_slider {
-  height: 25vw;
+  height: 50vw;
   position: relative;
 }
 #gallery .gallery_slider div {
-  height: 25vw;
+  height: 50vw;
 }
 #gallery .slick-dotted.slick-slider {
   margin-bottom: unset;
@@ -488,6 +492,7 @@ header .news__dl .news_list:last-child {
 @media (min-width: 960px) {
   #gallery .slick-dots {
     height: 16px;
+    bottom: -44px;
   }
 }
 #gallery .slick-dots li {
@@ -498,7 +503,7 @@ header .news__dl .news_list:last-child {
 @media (min-width: 960px) {
   #gallery .slick-dots li {
     height: 16px;
-    width: 32px;
+    width: 36px;
   }
 }
 #gallery .slick-dots li button {
@@ -523,11 +528,13 @@ header .news__dl .news_list:last-child {
 
 #bartender {
   padding-top: 80px;
+  margin-bottom: 80px;
   position: relative;
 }
 @media (min-width: 960px) {
   #bartender {
     padding-top: 160px;
+    margin-bottom: unset;
   }
 }
 #bartender .bartender_bg {
@@ -905,7 +912,7 @@ header .news__dl .news_list:last-child {
   justify-content: space-between;
   margin-bottom: 16px;
   padding: 4px 0;
-  border-bottom: 1px dashed #ffffff;
+  border-bottom: 1rem dashed #ffffff;
 }
 @media (min-width: 960px) {
   #menu .menu_list__drink .list_item {
@@ -949,7 +956,7 @@ header .news__dl .news_list:last-child {
   justify-content: space-between;
   margin-bottom: 16px;
   padding: 4px 0;
-  border-bottom: 1px dashed #ffffff;
+  border-bottom: 1rem dashed #ffffff;
 }
 @media (min-width: 960px) {
   #menu .menu_list__food .list_item {

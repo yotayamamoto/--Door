@@ -10,6 +10,7 @@ $(document).ready(function(){
         slidesToShow: 1,
         arrows:false,
         autoplay:true,
+        speed:1500,
         fade:true
     });
 })
