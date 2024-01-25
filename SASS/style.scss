@@ -1129,6 +1129,7 @@ footer{
         margin-bottom: 40px;
         @media(min-width:$middle){
             height: 600rem;
+            margin-bottom: 80px;
         }
     }
     main{
@@ -1142,7 +1143,7 @@ footer{
                 font-size: 10rem;
                 display: inline-block;
                 margin-right: 4px;
-                letter-spacing: 0.5em;
+                letter-spacing: 0.5px;
                 @media(min-width:$middle){
                     font-size: 16rem;
                     margin-right: 8px;
@@ -1168,7 +1169,7 @@ footer{
             h2{
                 font-size: 12rem;
                 margin-bottom: 80px;
-                letter-spacing: 0.6em;
+                letter-spacing: 0.6px;
                 @media(min-width:$middle){
                     font-size: 14rem;
                     margin-bottom: 160px;
@@ -1189,12 +1190,17 @@ footer{
                             margin-bottom: 40px;
                         }
                         li.blog_card {
+                            margin-bottom: 40px;
                             @media(min-width:$middle){
                                 display: flex;
                                 margin-bottom: 80rem;
                             }
                             .image {
+                                width: 60%;
+                                height: 128rem;
+                                margin-bottom: 16px;
                                 @media(min-width:$middle){
+                                    margin-bottom: unset;
                                     width: 205rem;
                                     height: 256rem;
                                 }
@@ -1205,31 +1211,44 @@ footer{
                                     width: 659rem;
                                 }
                                 &__inner{
-                                    margin-top: 24rem;
-                                    padding: 8px 8px 8px 24rem;
+                                    padding: 4px;
                                     background: #15161A;
+                                    @media(min-width:$middle){
+                                        margin-top: 24rem;
+                                        padding: 8px 8px 8px 24rem;
+                                        background: #15161A;
+                                    }
                                     p.category {
+                                        font-size: 12rem;
+                                        font-weight: 300;
+                                        letter-spacing: 0.6px;
+                                        font-family: $ff_english;
+                                        margin-bottom: 4px;
                                         @media(min-width:$middle){
                                             font-size: 16rem;
-                                            font-weight: 300;
                                             letter-spacing: 0.8px;
-                                            font-family: $ff_english;
                                             margin-bottom: 8px;
                                         }
                                         
                                     }
                                     h3 {
+                                        font-size: 16rem;
+                                        line-height: 100%;
+                                        letter-spacing: 0.8px;
+                                        margin-bottom: 8px;
                                         @media(min-width:$middle){
                                             font-size: 24px;
-                                            line-height: 100%;
                                             letter-spacing: 1.2px;
                                             margin-bottom: 16px;
-                                    }
-                                        
+                                        }  
                                     }
                                     p.content {
+                                        text-align: justify;
+                                        font-size: 12rem;
+                                        line-height: 100%;
+                                        letter-spacing: 0.6px;
+                                        margin-bottom: 4px;
                                         @media(min-width:$middle){
-                                            text-align: justify;
                                             font-size: 16rem;
                                             line-height: 100%;
                                             letter-spacing: 0.8px;
@@ -1238,26 +1257,31 @@ footer{
                                         
                                     }
                                     .opution {
+                                        display: flex;
+                                        gap: 14rem;
+                                        justify-content: right;
                                         @media(min-width:$middle){
-                                            display: flex;
                                             gap: 28rem;
-                                            justify-content: right;
                                         }
                                         a.tag {
+                                            font-size: 10rem;
+                                            font-weight: 300;
+                                            line-height: 100%;
+                                            letter-spacing: 0.5px;
                                             @media(min-width:$middle){
                                                 font-size: 14rem;
-                                                font-weight: 300;
-                                                line-height: 100%;
                                                 letter-spacing: 0.7px;
                                             }
                                             
                                         }
                                         time {
+                                            font-size: 10rem;
+                                            font-weight: 300;
+                                            line-height: 100%;
+                                            letter-spacing: 0.5px;
                                             @media(min-width:$middle){
                                                 font-family: $ff_english;
                                                 font-size: 14rem;
-                                                font-weight: 300;
-                                                line-height: 100%;
                                                 letter-spacing: 0.7px;
                                             }
                                         }
@@ -1268,13 +1292,23 @@ footer{
                     }
                     .page_nation {
                         text-align: center;
+                        margin-bottom: 80px;
+                        @media(min-width:$middle){
+                            margin-bottom: unset;
+                        }
                         a {
                             display: inline-block;
-                            font-size: 20rem;
-                            margin-right: 48rem;
+                            font-size: 10rem;
+                            margin-right: 24rem;
                             font-weight: 300;
                             line-height: 100%;
-                            letter-spacing: 1px;
+                            letter-spacing: 0.1px;
+                            @media(min-width:$middle){
+                                font-size: 20rem;
+                                margin-right: 48rem;
+                                letter-spacing: 1px;
+                            }
+                            
                         }
                         a:last-child{
                             margin-right: unset;
@@ -1290,18 +1324,22 @@ footer{
                         align-items: baseline;
                         margin-bottom: 40px;
                         h3 {
+                            font-family: $ff_english;
+                            font-size: 36rem;
+                            line-height: 100%;
+                            letter-spacing: 1.2px;
                             @media(min-width:$middle){
-                                font-family: $ff_english;
                                 font-size: 48rem;
-                                line-height: 100%;
                                 letter-spacing: 2.4px;
                             }
                         }
                         span {
+                            font-size: 12rem;
+                            font-weight: 300;
+                            line-height: 100%;
+                            letter-spacing: 0.6px;
                             @media(min-width:$middle){
-                                font-size: 14px;
-                                font-weight: 300;
-                                line-height: 100%;
+                                font-size: 14rem;;
                                 letter-spacing: 0.7px;
                             }
                         }
@@ -1311,28 +1349,31 @@ footer{
                             display: flex;
                             gap: 8px;
                             align-items: baseline;
-                            margin-bottom: 24px;
+                            margin-bottom: 32px;
                             h4 {
+                                font-family: $ff_english;
+                                font-size: 18rem;
+                                line-height: 100%;
+                                letter-spacing: 0.8px;
                                 @media(min-width:$middle){
-                                    font-family: $ff_english;
                                     font-size: 20rem;
-                                    line-height: 100%;
                                     letter-spacing: 2px;
                                 }
                             }
                             span {
-                                @media(min-width:$middle){
-                                    font-size: 10px;
-                                    font-weight: 300;
-                                    line-height: 100%;
-                                    letter-spacing: 0.1px;
-                                }
+                                font-size: 10rem;
+                                font-weight: 300;
+                                line-height: 100%;
+                                letter-spacing: 0.1px;                               
                             }
                         }
                         ul {
                             margin-bottom: 40px;
                             li.blog_card {
                                 .image {
+                                    width: 60%;
+                                    height: 128rem;
+                                    margin-bottom: 16px;
                                     @media(min-width:$middle){
                                         width: 200rem;
                                         height: 124rem;
@@ -1353,28 +1394,25 @@ footer{
                                         margin-bottom: 8px;
                                     }
                                     .opution {
+                                        display: flex;
+                                        justify-content: right;
+                                        gap: 14px;
                                         @media(min-width:$middle){
-                                            display: flex;
                                             gap: 28rem;
-                                            justify-content: right;
                                         }
                                         a.tag {
-                                            @media(min-width:$middle){
-                                                font-size: 10rem;
-                                                font-weight: 300;
-                                                line-height: 100%;
-                                                letter-spacing: 0.5px;
-                                            }
+                                            font-size: 10rem;
+                                            font-weight: 300;
+                                            line-height: 100%;
+                                            letter-spacing: 0.5px;
                                             
                                         }
                                         time {
-                                            @media(min-width:$middle){
-                                                font-family: $ff_english;
-                                                font-size: 10rem;
-                                                font-weight: 300;
-                                                line-height: 100%;
-                                                letter-spacing: 0.5px;
-                                            }
+                                            font-family: $ff_english;
+                                            font-size: 10rem;
+                                            font-weight: 300;
+                                            line-height: 100%;
+                                            letter-spacing: 0.5px;                         
                                         }
                                     }
                                 }
@@ -1386,22 +1424,22 @@ footer{
                             display: flex;
                             gap: 8px;
                             align-items: baseline;
-                            margin-bottom: 24px;
+                            margin-bottom: 32px;
                             h4 {
+                                font-family: $ff_english;
+                                font-size: 18rem;
+                                line-height: 100%;
+                                letter-spacing: 0.8px;
                                 @media(min-width:$middle){
-                                    font-family: $ff_english;
                                     font-size: 20rem;
-                                    line-height: 100%;
                                     letter-spacing: 2px;
                                 }
                             }
                             span {
-                                @media(min-width:$middle){
-                                    font-size: 10px;
-                                    font-weight: 300;
-                                    line-height: 100%;
-                                    letter-spacing: 0.1px;
-                                }
+                                font-size: 10rem;
+                                font-weight: 300;
+                                line-height: 100%;
+                                letter-spacing: 0.1px;
                             }
                         }
                         .tag_area {
@@ -1409,12 +1447,10 @@ footer{
                             flex-wrap: wrap;
                             gap: 16px 24px;
                             a.tag {
-                                @media(min-width:$middle){
-                                    font-size: 16rem;
-                                    font-weight: 300;
-                                    line-height: 100%;
-                                    letter-spacing: 0.8px;
-                                }
+                                font-size: 16rem;
+                                font-weight: 300;
+                                line-height: 100%;
+                                letter-spacing: 0.8px;
                                 
                             }
                         }
