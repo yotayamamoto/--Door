@@ -1121,3 +1121,307 @@ footer{
         }
     }
 }
+
+// news/blogページ
+.row{
+    header{
+        height: 400px;
+        margin-bottom: 40px;
+        @media(min-width:$middle){
+            height: 600rem;
+        }
+    }
+    main{
+        padding: 0 4%;
+        .breadcrumb{
+            margin-bottom: 40px;
+            @media(min-width:$middle){
+                margin-bottom: 80px;
+            }
+            li,a{
+                font-size: 10rem;
+                display: inline-block;
+                margin-right: 4px;
+                letter-spacing: 0.5em;
+                @media(min-width:$middle){
+                    font-size: 16rem;
+                    margin-right: 8px;
+                    letter-spacing: 0.8px;
+                }
+            }
+        }
+        .news{
+            max-width: 1200px;
+            margin: 0 auto 160px;
+            text-align: center;
+            .heading{
+                font-size: 48rem;
+                letter-spacing: 2.4px;
+                margin-bottom: 20px;
+                font-family: $ff_english;
+                @media(min-width:$middle){
+                    font-size: 96rem;
+                    margin-bottom: 40px;
+                    letter-spacing: 4.8px;
+                }
+            }
+            h2{
+                font-size: 12rem;
+                margin-bottom: 80px;
+                letter-spacing: 0.6em;
+                @media(min-width:$middle){
+                    font-size: 14rem;
+                    margin-bottom: 160px;
+                    letter-spacing: 0.7px;
+                }
+            }
+            .blog_wrapper {
+                max-width: 1200px;
+                margin: 0 auto;
+                @media(min-width:$middle){
+                    display: flex;
+                    gap: 44px;
+                }
+                &__left {
+                    // width: 100%;
+                    ul {
+                        @media(min-width:$middle){
+                            margin-bottom: 40px;
+                        }
+                        li.blog_card {
+                            @media(min-width:$middle){
+                                display: flex;
+                                margin-bottom: 80rem;
+                            }
+                            .image {
+                                @media(min-width:$middle){
+                                    width: 205rem;
+                                    height: 256rem;
+                                }
+                            }
+                            .text_box {
+                                text-align: left;
+                                @media(min-width:$middle){
+                                    width: 659rem;
+                                }
+                                &__inner{
+                                    margin-top: 24rem;
+                                    padding: 8px 8px 8px 24rem;
+                                    background: #15161A;
+                                    p.category {
+                                        @media(min-width:$middle){
+                                            font-size: 16rem;
+                                            font-weight: 300;
+                                            letter-spacing: 0.8px;
+                                            font-family: $ff_english;
+                                            margin-bottom: 8px;
+                                        }
+                                        
+                                    }
+                                    h3 {
+                                        @media(min-width:$middle){
+                                            font-size: 24px;
+                                            line-height: 100%;
+                                            letter-spacing: 1.2px;
+                                            margin-bottom: 16px;
+                                    }
+                                        
+                                    }
+                                    p.content {
+                                        @media(min-width:$middle){
+                                            text-align: justify;
+                                            font-size: 16rem;
+                                            line-height: 100%;
+                                            letter-spacing: 0.8px;
+                                            margin-bottom: 8px;
+                                    }
+                                        
+                                    }
+                                    .opution {
+                                        @media(min-width:$middle){
+                                            display: flex;
+                                            gap: 28rem;
+                                            justify-content: right;
+                                        }
+                                        a.tag {
+                                            @media(min-width:$middle){
+                                                font-size: 14rem;
+                                                font-weight: 300;
+                                                line-height: 100%;
+                                                letter-spacing: 0.7px;
+                                            }
+                                            
+                                        }
+                                        time {
+                                            @media(min-width:$middle){
+                                                font-family: $ff_english;
+                                                font-size: 14rem;
+                                                font-weight: 300;
+                                                line-height: 100%;
+                                                letter-spacing: 0.7px;
+                                            }
+                                        }
+                                    }
+                                }  
+                            }
+                        }
+                    }
+                    .page_nation {
+                        text-align: center;
+                        a {
+                            display: inline-block;
+                            font-size: 20rem;
+                            margin-right: 48rem;
+                            font-weight: 300;
+                            line-height: 100%;
+                            letter-spacing: 1px;
+                        }
+                        a:last-child{
+                            margin-right: unset;
+                        }
+                    }
+                }
+                .blog_wrapper__right {
+                    &__heading {
+                        display: flex;
+                        gap: 8px;
+                        padding-bottom: 8px;
+                        border-bottom: 1px solid #ffffff;
+                        align-items: baseline;
+                        margin-bottom: 40px;
+                        h3 {
+                            @media(min-width:$middle){
+                                font-family: $ff_english;
+                                font-size: 48rem;
+                                line-height: 100%;
+                                letter-spacing: 2.4px;
+                            }
+                        }
+                        span {
+                            @media(min-width:$middle){
+                                font-size: 14px;
+                                font-weight: 300;
+                                line-height: 100%;
+                                letter-spacing: 0.7px;
+                            }
+                        }
+                    }
+                    &__pick_up {
+                        .heading {
+                            display: flex;
+                            gap: 8px;
+                            align-items: baseline;
+                            margin-bottom: 24px;
+                            h4 {
+                                @media(min-width:$middle){
+                                    font-family: $ff_english;
+                                    font-size: 20rem;
+                                    line-height: 100%;
+                                    letter-spacing: 2px;
+                                }
+                            }
+                            span {
+                                @media(min-width:$middle){
+                                    font-size: 10px;
+                                    font-weight: 300;
+                                    line-height: 100%;
+                                    letter-spacing: 0.1px;
+                                }
+                            }
+                        }
+                        ul {
+                            margin-bottom: 40px;
+                            li.blog_card {
+                                .image {
+                                    @media(min-width:$middle){
+                                        width: 200rem;
+                                        height: 124rem;
+                                        margin-bottom: 16px;
+                                    }
+                                }
+                                .text_box {
+                                    text-align: left;
+                                    margin-bottom: 24px;
+                                    h3 {
+                                        font-size: 16rem;
+                                        letter-spacing: 0.8px;
+                                        margin-bottom: 8px;
+                                    }
+                                    p.content {
+                                        font-size: 12rem;
+                                        letter-spacing: 0.6px;
+                                        margin-bottom: 8px;
+                                    }
+                                    .opution {
+                                        @media(min-width:$middle){
+                                            display: flex;
+                                            gap: 28rem;
+                                            justify-content: right;
+                                        }
+                                        a.tag {
+                                            @media(min-width:$middle){
+                                                font-size: 10rem;
+                                                font-weight: 300;
+                                                line-height: 100%;
+                                                letter-spacing: 0.5px;
+                                            }
+                                            
+                                        }
+                                        time {
+                                            @media(min-width:$middle){
+                                                font-family: $ff_english;
+                                                font-size: 10rem;
+                                                font-weight: 300;
+                                                line-height: 100%;
+                                                letter-spacing: 0.5px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &__keyword {
+                        .heading {
+                            display: flex;
+                            gap: 8px;
+                            align-items: baseline;
+                            margin-bottom: 24px;
+                            h4 {
+                                @media(min-width:$middle){
+                                    font-family: $ff_english;
+                                    font-size: 20rem;
+                                    line-height: 100%;
+                                    letter-spacing: 2px;
+                                }
+                            }
+                            span {
+                                @media(min-width:$middle){
+                                    font-size: 10px;
+                                    font-weight: 300;
+                                    line-height: 100%;
+                                    letter-spacing: 0.1px;
+                                }
+                            }
+                        }
+                        .tag_area {
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 16px 24px;
+                            a.tag {
+                                @media(min-width:$middle){
+                                    font-size: 16rem;
+                                    font-weight: 300;
+                                    line-height: 100%;
+                                    letter-spacing: 0.8px;
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// news/blogページ
