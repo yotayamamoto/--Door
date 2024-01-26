@@ -1127,9 +1127,19 @@ footer{
     header{
         height: 400px;
         margin-bottom: 40px;
+        position: relative;
         @media(min-width:$middle){
             height: 600rem;
             margin-bottom: 80px;
+        }
+        .mainvisual::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(270deg, rgba(21, 22, 26, 0.00) 7%, #15161A 100%);
         }
     }
     main{
