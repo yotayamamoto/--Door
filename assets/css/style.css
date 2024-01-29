@@ -1467,7 +1467,7 @@ footer .footer_inner .copy p {
 }
 .row main .news .blog_wrapper__left ul li.blog_card .text_box__inner h3 {
   font-size: 16rem;
-  line-height: 100%;
+  line-height: 150%;
   letter-spacing: 0.8px;
   margin-bottom: 8px;
 }
@@ -1481,7 +1481,7 @@ footer .footer_inner .copy p {
 .row main .news .blog_wrapper__left ul li.blog_card .text_box__inner div.content {
   text-align: justify;
   font-size: 12rem;
-  line-height: 120%;
+  line-height: 150%;
   letter-spacing: 0.6px;
   margin-bottom: 4px;
   display: -webkit-box;
@@ -1636,9 +1636,11 @@ footer .footer_inner .copy p {
   font-size: 16rem;
   letter-spacing: 0.8px;
   margin-bottom: 8px;
+  line-height: 150%;
 }
 .row main .news .blog_wrapper .blog_wrapper__right__pick_up ul li.blog_card .text_box .content {
   font-size: 12rem;
+  line-height: 150%;
   letter-spacing: 0.6px;
   margin-bottom: 8px;
   display: -webkit-box;
