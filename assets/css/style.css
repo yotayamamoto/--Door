@@ -32,6 +32,11 @@ a:hover {
   opacity: 0.7;
 }
 
+.eizi,
+.tag{
+  font-family: "Cormorant Garamond",serif;
+}
+
 header {
   height: 607px;
   position: relative;
@@ -292,6 +297,7 @@ header .news__heading h3 {
 header .news__heading p {
   display: inline-block;
   font-size: 10px;
+  font-family: "Cormorant Garamond", serif;
   letter-spacing: 0.5px;
   margin: 14px 0 8px;
   line-height: 100%;
@@ -306,7 +312,7 @@ header .news__heading p::after {
   content: "";
   display: block;
   width: 24px;
-  border: 1px solid #ffffff;
+  border: 1rem solid #ffffff;
   position: absolute;
   top: 50%;
   right: -32px;
@@ -458,6 +464,7 @@ header .news__dl .news_list:last-child {
 }
 #gallery .gallery_bg {
   font-size: 64rem;
+  font-family: "Cormorant Garamond", serif;
   line-height: 100%;
   letter-spacing: 3.2px;
   color: #15161A;
@@ -472,11 +479,11 @@ header .news__dl .news_list:last-child {
   }
 }
 #gallery .gallery_slider {
-  height: 50vw;
+  height: 30vw;
   position: relative;
 }
 #gallery .gallery_slider div {
-  height: 50vw;
+  height: 30vw;
 }
 #gallery .slick-dotted.slick-slider {
   margin-bottom: unset;
@@ -538,6 +545,7 @@ header .news__dl .news_list:last-child {
 }
 #bartender .bartender_bg {
   font-size: 64rem;
+  font-family: "Cormorant Garamond", serif;
   line-height: 100%;
   letter-spacing: 3.2px;
   color: #15161A;
@@ -633,7 +641,7 @@ header .news__dl .news_list:last-child {
 }
 #bartender .bartender_flex__left p {
   font-size: 14rem;
-  line-height: 180%;
+  line-height: 150%;
   letter-spacing: 0.7px;
   text-align: justify;
 }
@@ -660,6 +668,7 @@ header .news__dl .news_list:last-child {
 }
 #cocktail .cocktail_bg {
   font-size: 64rem;
+  font-family: "Cormorant Garamond", serif;
   line-height: 100%;
   letter-spacing: 3.2px;
   color: #15161A;
@@ -764,27 +773,29 @@ header .news__dl .news_list:last-child {
   padding-right: 7%;
 }
 #cocktail .cocktail_flex__right__dl dt {
-  font-size: 16rem;
-  margin-bottom: 14px;
+  font-size: 20rem;
+  line-height: 120%;
+  margin-bottom: 20px;
   font-weight: normal;
   letter-spacing: 0.8px;
 }
 @media (min-width: 960px) {
   #cocktail .cocktail_flex__right__dl dt {
-    font-size: 24rem;
+    font-size: 28rem;
     margin-bottom: 18px;
     letter-spacing: 1.2px;
   }
 }
-#cocktail .cocktail_flex__right__dl dd {
+#cocktail .cocktail_flex__right__dl dd{
   font-size: 14rem;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  line-height: 150%;
   text-align: justify;
   letter-spacing: 0.7px;
 }
 @media (min-width: 960px) {
   #cocktail .cocktail_flex__right__dl dd {
-    font-size: 20rem;
+    font-size: 16rem;
     margin-bottom: 28px;
     letter-spacing: 1px;
   }
@@ -819,7 +830,7 @@ header .news__dl .news_list:last-child {
   content: "";
   display: block;
   width: 24px;
-  border: 1px solid #ffffff;
+  border: 1rem solid #ffffff;
   position: absolute;
   top: 50%;
   right: -32px;
@@ -865,7 +876,7 @@ header .news__dl .news_list:last-child {
   #menu h2 {
     font-size: 96rem;
     letter-spacing: 4.8px;
-    padding: 0 40px 16px 0;
+    padding: 0 20px 16px ;
     margin-bottom: 64px;
   }
 }
@@ -873,8 +884,8 @@ header .news__dl .news_list:last-child {
   padding: 0 4%;
   max-width: 1296px;
   text-align: left;
-  width: 287rem;
-  margin: 0 auto;
+  /* width: 287rem;
+  margin: 0 auto; */
 }
 @media (min-width: 960px) {
   #menu .menu_list {
@@ -977,8 +988,8 @@ header .news__dl .news_list:last-child {
   padding: 0 4%;
   text-align: right;
   max-width: 1296px;
-  width: 287rem;
-  margin: 0 auto;
+  /* width: 287rem;
+  margin: 0 auto; */
 }
 @media (min-width: 960px) {
   #menu .btn_menu {
@@ -1002,7 +1013,7 @@ header .news__dl .news_list:last-child {
   content: "";
   display: block;
   width: 24px;
-  border: 1px solid #ffffff;
+  border: 1rem solid #ffffff;
   position: absolute;
   top: 50%;
   right: -32px;
@@ -1034,7 +1045,7 @@ header .news__dl .news_list:last-child {
   #location h2 {
     font-size: 96rem;
     letter-spacing: 4.8px;
-    padding: 0 40px 16px 0;
+    padding: 0 20px 16px ;
     margin-bottom: 64px;
   }
 }
@@ -1467,17 +1478,20 @@ footer .footer_inner .copy p {
     margin-bottom: 16px;
   }
 }
-.row main .news .blog_wrapper__left ul li.blog_card .text_box__inner p.content {
+.row main .news .blog_wrapper__left ul li.blog_card .text_box__inner div.content {
   text-align: justify;
   font-size: 12rem;
-  line-height: 100%;
+  line-height: 120%;
   letter-spacing: 0.6px;
   margin-bottom: 4px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 @media (min-width: 960px) {
-  .row main .news .blog_wrapper__left ul li.blog_card .text_box__inner p.content {
+  .row main .news .blog_wrapper__left ul li.blog_card .text_box__inner div.content p{
     font-size: 16rem;
-    line-height: 100%;
     letter-spacing: 0.8px;
     margin-bottom: 8px;
   }
@@ -1492,14 +1506,14 @@ footer .footer_inner .copy p {
     gap: 28rem;
   }
 }
-.row main .news .blog_wrapper__left ul li.blog_card .text_box__inner .opution a.tag {
+.row main .news .blog_wrapper__left ul li.blog_card .text_box__inner .opution .tag a{
   font-size: 10rem;
   font-weight: 300;
   line-height: 100%;
   letter-spacing: 0.5px;
 }
 @media (min-width: 960px) {
-  .row main .news .blog_wrapper__left ul li.blog_card .text_box__inner .opution a.tag {
+  .row main .news .blog_wrapper__left ul li.blog_card .text_box__inner .opution .tag a{
     font-size: 14rem;
     letter-spacing: 0.7px;
   }
@@ -1512,7 +1526,6 @@ footer .footer_inner .copy p {
 }
 @media (min-width: 960px) {
   .row main .news .blog_wrapper__left ul li.blog_card .text_box__inner .opution time {
-    font-family: "Cormorant Garamond", serif;
     font-size: 14rem;
     letter-spacing: 0.7px;
   }
@@ -1624,10 +1637,14 @@ footer .footer_inner .copy p {
   letter-spacing: 0.8px;
   margin-bottom: 8px;
 }
-.row main .news .blog_wrapper .blog_wrapper__right__pick_up ul li.blog_card .text_box p.content {
+.row main .news .blog_wrapper .blog_wrapper__right__pick_up ul li.blog_card .text_box .content {
   font-size: 12rem;
   letter-spacing: 0.6px;
   margin-bottom: 8px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 .row main .news .blog_wrapper .blog_wrapper__right__pick_up ul li.blog_card .text_box .opution {
   display: flex;
@@ -1646,7 +1663,6 @@ footer .footer_inner .copy p {
   letter-spacing: 0.5px;
 }
 .row main .news .blog_wrapper .blog_wrapper__right__pick_up ul li.blog_card .text_box .opution time {
-  font-family: "Cormorant Garamond", serif;
   font-size: 10rem;
   font-weight: 300;
   line-height: 100%;
@@ -1676,7 +1692,7 @@ footer .footer_inner .copy p {
   line-height: 100%;
   letter-spacing: 0.1px;
 }
-.row main .news .blog_wrapper .blog_wrapper__right__keyword .tag_area {
+.row main .news .blog_wrapper .blog_wrapper__right__keyword .tag_area ul {
   display: flex;
   flex-wrap: wrap;
   gap: 16px 24px;
@@ -1687,3 +1703,89 @@ footer .footer_inner .copy p {
   line-height: 100%;
   letter-spacing: 0.8px;
 }
+
+/* コンタクト */
+.contact{
+  text-align: center;
+  margin-bottom: 80px;
+  font-size: 20rem;
+}
+@media (min-width: 960px){
+  .contact{
+    margin-bottom: 160px;
+  }
+}
+
+.contact h2{
+  display: inline-block;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 24rem;
+  line-height: 100%;
+  letter-spacing: 1.2px;
+  padding: 0 8px 8px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid #ffffff;
+  
+}
+@media (min-width: 960px) {
+  .contact h2 {
+    font-size: 96rem;
+    letter-spacing: 4.8px;
+    padding: 0 20px 16px ;
+    margin-bottom: 64px;
+  }
+}
+
+
+.contact_form{
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#wpcf7-f76-o1{
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+}
+
+.contact_form p{
+  font-size: 20rem;
+  margin-bottom: 16px;
+  font-family:  "Cormorant Garamond", serif;
+}
+.contact_form p label{
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.contact_form p span input{
+  width: 100%;
+  display: inline-block;
+  background-color: #ffffff;
+  margin-top: 4px;
+  padding: 16px 32px;
+  color: #15161A;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+.contact_form p span textarea{
+  width: 100%;
+  display: inline-block;
+  background-color: #ffffff;
+  margin-top: 8px;
+  padding: 8px 16px;
+  color: #15161A;
+}
+
+.wpcf7-submit{
+  color: #15161A;
+  background-color: #ffffff;
+  padding: 4px 16px;
+  font-weight: 600;
+}
+
+
+
+/* コンタクト */

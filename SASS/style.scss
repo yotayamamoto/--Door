@@ -650,7 +650,7 @@ header{
             &__dl{
                 padding-right: 7%;
                 dt{
-                    font-size: 16rem;
+                    font-size: 20rem;
                     margin-bottom: 14px;
                     font-weight: normal;
                     letter-spacing: 0.8px;
@@ -663,10 +663,11 @@ header{
                 dd{
                     font-size: 14rem;
                     margin-bottom: 20px;
+                    line-height: 120%;
                     text-align: justify;
                     letter-spacing: 0.7px;
                     @media(min-width:$middle){
-                        font-size: 20rem;
+                        font-size: 14rem;
                         margin-bottom: 28px;
                         letter-spacing: 1px;
                     }

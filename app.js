@@ -2,6 +2,10 @@ $('.humburger').click(function(){
     $(this).toggleClass('open'); 
     $(".sp_nav").toggleClass('open'); 
 })
+$('.sp_menu').click(function(){
+    $('.humburger').toggleClass('open'); 
+    $('.sp_nav').toggleClass('open'); 
+})
 
 $(document).ready(function(){
     $('.gallery_slider').slick({
