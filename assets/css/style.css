@@ -1788,6 +1788,11 @@ footer .footer_inner .copy p {
   font-weight: 600;
 }
 
+select.wpcf7-form-control.wpcf7-select{
+  background-color: #ffffff;
+  color: #15161A;
+  padding: 16px 32px;
+}
 
 
 /* コンタクト */
